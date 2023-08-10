@@ -1,0 +1,40 @@
+.coin-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .coin-list h1 {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  
+  .coin-list table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  
+  .coin-list th, .coin-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .coin-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .coin-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .coin-list tr:hover {
+    background-color: #ddd;
+  }
+  
+  .coin-list .loading {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  

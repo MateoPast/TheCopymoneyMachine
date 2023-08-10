@@ -1,0 +1,135 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 999;
+  }
+  
+  .navbar_links {
+    display: flex;
+    justify-content: flex-end; /* aligner les éléments sur la droite */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar_link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #555;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar_link:hover {
+    color: #f28500;
+  }
+  
+  .navbar_login,
+  .navbar_signup {
+    background-color: #f28500;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .navbar_login:hover,
+  .navbar_signup:hover {
+    background-color: #d96c00;
+    color: #fff;
+  }
+  
+  .navbar_burger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .burger-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #555;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .show-nav .burger-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .show-nav .burger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .show-nav .burger-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  .navbar_signout {
+    background-color: transparent;
+    border: 1px solid #fa0202;
+    color: #fa0202;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    order: 1; /* déplacer le bouton à la fin */
+  }
+  
+  .navbar_signout:hover {
+    background-color: #fa0202;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar_links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      z-index: 998;
+    }
+  
+    .navbar_links li {
+      margin: 1rem 0;
+    }
+  
+    .navbar_burger {
+      display: block;
+    }
+  
+    .hide-nav .navbar_links {
+      display: none;
+    }
+  
+    .show-nav .navbar_links {
+      display: flex;
+    }
+  
+    .navbar_link {
+      margin-right: 0;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .navbar_login,
+    .navbar_signup {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

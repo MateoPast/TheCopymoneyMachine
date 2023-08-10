@@ -1,0 +1,28 @@
+.refresh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.refresh-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.refresh-button:hover {
+  background-color: #0066cc;
+}
+
+.last-refresh {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  color: #777;
+}
